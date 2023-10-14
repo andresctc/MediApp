@@ -7,6 +7,8 @@ import { CompAComponent } from './pages/comp-a/comp-a.component';
 import { CompBComponent } from './pages/comp-b/comp-b.component';
 import { CompCComponent } from './pages/comp-c/comp-c.component';
 import { NoPaginaComponent } from './pages/no-pagina/no-pagina.component';
+import { SubAComponent } from './pages/comp-a/sub-a/sub-a.component';
+import { SubBComponent } from './pages/comp-a/sub-b/sub-b.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { NoPaginaComponent } from './pages/no-pagina/no-pagina.component';
     CompAComponent,
     CompBComponent,
     CompCComponent,
-    NoPaginaComponent
+    NoPaginaComponent,
+    SubAComponent,
+    SubBComponent
   ],
   imports: [
     BrowserModule,
