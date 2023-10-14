@@ -5,20 +5,19 @@ import {CompCComponent} from './pages/comp-c/comp-c.component';
 import {SubAComponent} from './pages/comp-a/sub-a/sub-a.component';
 import { RouterModule, Routes } from '@angular/router';
 import { SubBComponent } from './pages/comp-a/sub-b/sub-b.component';
+import { NoPaginaComponent } from './pages/no-pagina/no-pagina.component';
 
 const routes: Routes = [ 
   {
     path: 'compa', component: CompAComponent, children:[
-      {path: 'suba', component: SubAComponent},
-      {path: 'subb', component: SubBComponent}
+      { path: 'subb', component: SubBComponent },
+      { path: 'suba', component: SubAComponent }
     ]
   },
-  {
-    path: 'compb', component: CompBComponent
-  },
-  {
-    path: 'compc', component: CompCComponent
-  }
+  { path: 'compb', component: CompBComponent },
+  { path: 'compc', component: CompCComponent },
+  { path: '', redirectTo: 'compa', pathMatch: 'full' },
+  { path: '**', component: NoPaginaComponent }
 ];
 
 @NgModule({
