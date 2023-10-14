@@ -6,11 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'hello-world Andres';
-  ladrido: string;
-
-  recibirLadrido(event: any){
-    console.log(event);
-    this.ladrido = event;
-  }
+  title = 'app-routing';
 }

@@ -1,0 +1,29 @@
+<mat-card>Persona</mat-card>
+
+<div class="contenedor">
+    <mat-form-field>
+        <input matInput placeholder="Nombres y apellidos" (keyup)="teclear($event)">
+    </mat-form-field>
+    <p>{{saludo}}</p>
+
+    <mat-form-field>
+        <input matInput placeholder="DNI" type="number" required [(ngModel)] ="dni" (keyup)="teclearDNI($event)"  (keyup.enter)="agregar()">
+    </mat-form-field>
+
+    <p>{{dni}}</p>
+    
+    <button mat-button (click)="agregar()" [disabled]="estadoBotonAgregar">Agregar</button>
+
+    <ul>
+        <li *ngFor="let d of listaDNI">{{d}}</li>
+    </ul>
+
+    <mat-list role="list">
+        <mat-list-item role="listitem" *ngFor="let d of listaDNI; let i = index">
+            {{i+1}} - {{d}}
+            <button mat-raised-button color="accent" (click)="remover(i)">Remover</button>
+        </mat-list-item>
+        
+    </mat-list>
+
+</div>
