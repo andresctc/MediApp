@@ -1,0 +1,5 @@
+FROM nginx:alpine
+
+RUN rm - rf/share/nginx/html/*
+
+CMD ["ngnix", "-g", "daemon off;"]

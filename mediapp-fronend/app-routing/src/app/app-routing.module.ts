@@ -10,14 +10,14 @@ import { NoPaginaComponent } from './pages/no-pagina/no-pagina.component';
 const routes: Routes = [ 
   {
     path: 'compa', component: CompAComponent, children:[
-      { path: 'subb', component: SubBComponent },
+      { path: 'subb', component: SubBComponent },// hijo del compoennte compa
       { path: 'suba', component: SubAComponent }
     ]
   },
   { path: 'compb', component: CompBComponent },
   { path: 'compc', component: CompCComponent },
-  { path: '', redirectTo: 'compa', pathMatch: 'full' },
-  { path: '**', component: NoPaginaComponent }
+  { path: '', redirectTo: 'compa', pathMatch: 'full' }, // navegacion por defecto a compa
+  { path: '**', component: NoPaginaComponent } // si se busca un recurso que no existe
 ];
 
 @NgModule({

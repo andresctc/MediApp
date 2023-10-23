@@ -1,0 +1,7 @@
+FROM eclipse-temurin:17-jdk
+VOLUME /tmp
+RUN apt-get install -y tzdata
+ENV TZ America/Bogota
+RUN mkdir /tmp/app
+COPY target/*.jar /tmp/app/app.jar
+ENTRYPOINT ["java", "-jar", "/tmp/app/app.jar"]
