@@ -1,0 +1,26 @@
+{
+    person[
+        "nombre": "andres",
+        "apellido": "gutierrez",
+        "edad": 25,
+        "sexo": "masculino",
+        "direccion": {
+            "calle": "cll 10",
+            "numero": 346789,
+            "ciudad": "bogota",
+            "pais": "colombia"
+        }
+    ],
+    [
+        "nombre": "andres2",
+        "apellido": "gutierrez2",
+        "edad": 25,
+        "sexo": "masculino",
+        "direccion": {
+            "calle": "cll 10",
+            "numero": 346789,
+            "ciudad": "bogota",
+            "pais": "colombia"
+        }
+    ],
+}
