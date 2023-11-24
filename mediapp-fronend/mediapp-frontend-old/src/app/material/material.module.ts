@@ -12,6 +12,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatInputModule } from '@angular/material/input';
+import { MatAutocompleteModule, MatCardModule, MatDatepickerModule, MatDialogModule, MatExpansionModule, MatListModule, MatNativeDateModule, MatSelectModule, MatSnackBarModule } from "@angular/material";
 
 @NgModule({
     imports:[
@@ -27,7 +28,16 @@ import { MatInputModule } from '@angular/material/input';
         MatTableModule,
         MatPaginatorModule,
         MatSortModule,
-        MatInputModule
+        MatInputModule,
+        MatCardModule,
+        MatSnackBarModule,
+        MatDialogModule,
+        MatSelectModule,
+        MatDatepickerModule,
+        MatListModule,
+        MatExpansionModule,
+        MatNativeDateModule,
+        MatAutocompleteModule
     ],
     exports:[
         MatButtonModule,
@@ -40,7 +50,16 @@ import { MatInputModule } from '@angular/material/input';
         MatTableModule,
         MatPaginatorModule,
         MatSortModule,
-        MatInputModule
+        MatInputModule,
+        MatCardModule,
+        MatSnackBarModule,
+        MatDialogModule,
+        MatSelectModule,
+        MatDatepickerModule,
+        MatListModule,
+        MatExpansionModule,
+        MatNativeDateModule,
+        MatAutocompleteModule
     ],
     providers:[],
     declarations:[]

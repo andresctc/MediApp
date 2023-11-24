@@ -68,7 +68,7 @@ public class PacienteController {
 	}
 
 	@PutMapping("/registrar")
-	public ResponseEntity<Paciente> actualizar(@Valid @RequestBody Paciente paciente) {
+	public ResponseEntity<Paciente> registrar(@Valid @RequestBody Paciente paciente) {
 		Paciente pac = new Paciente();
 		try {
 			pac = service.registrar(paciente);
@@ -77,6 +77,12 @@ public class PacienteController {
 		}
 		return new ResponseEntity<Paciente>(pac, HttpStatusCode.valueOf(201));
 	}
+	
+	@PutMapping("/modificar")
+	public ResponseEntity<Object> actualizar(@Valid @RequestBody Paciente paciente) {
+			service.modificar(paciente);
+			return new ResponseEntity<Object>(HttpStatusCode.valueOf(200));
+			}
 
 	@DeleteMapping("/eliminar/{id}")
 	public void eliminarId(@PathVariable Integer id) {
